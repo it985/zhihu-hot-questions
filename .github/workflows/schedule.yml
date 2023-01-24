@@ -23,11 +23,11 @@ jobs:
 
       - name: Complete App
         run: |
-          git config --local user.email "1191430240@qq.com"
-          git config --local user.name "ToWeLong"
-          git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git config --local user.email "2071916845@qq.com"
+          git config --local user.name "it985"
+          git remote set-url origin https://${{ github.actor }}:${{ secrets.TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
           go run app.go
           git add .
-          git commit -m "update by github action"
+          git commit -m "update"
           git push
